@@ -45,7 +45,7 @@
   border-radius: 10px;
   background-color: white;
   position: relative;
-  height: 50px;
+  height: 90px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
 }
@@ -68,10 +68,14 @@
   bottom: 0;
   left: 50%;
   font-size: 12px;
-  color: grey;
+  color: #000000;
   cursor: pointer;
   transform: translate(-50%);
-  background-color: white;
+  background-color: #cbffc4;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 .article-open {
   height: 400px;
@@ -88,13 +92,13 @@
   left: 0;
   width: 350px;
   height: 100vh;
-  /* This give the height 100% of the screen or, '100% of View Height' */
+  /* This gives the height 100% of the screen or, '100% of View Height' */
   background-color: #81C784;
   border: 1px solid #004D40;
   border-left: none;
   border-bottom: none;
   z-index: 2;
-  /* This set the layer level of the element, it has precendence over initial level of 1*/
+  /* This sets the layer level of the element, it has precendence over initial level of 1*/
 }
 .menu ul li {
   list-style-type: none;
