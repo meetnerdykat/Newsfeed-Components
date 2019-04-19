@@ -1,17 +1,23 @@
-// const toggleMenu = () => {
-//   // Toggle the "menu--open" class on your menu refence.
-// };
+const toggleMenu = () => {
+  // Toggle the "menu--open" class on your menu reference.
+  menu.classList.toggle('menu--open');
+};
 
-// // Start Here: Create a reference to the ".menu" class
-// const toggleMenuItems = document.querySelectorAll('.menu ul');
+// Start Here: Create a reference to the ".menu" class
+const menu = document.querySelector('.menu');
 
-// // create a reference to the ".menu-button" class
-// const menuButton = document.querySelectorAll('.menu-button');
-// // Using your menuButton reference, add a click handler that calls toggleMenu
+// console.log(toggleMenuItems);
+
+// create a reference to the ".menu-button" class
+const menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click', toggleMenu);
+// console.log(menuButton);
+// Using your menuButton reference, add a click handler that calls toggleMenu
 
 // -------------------------------------------------------
 // MY NOTES
-// select the thing were it starts repeating
+// select the thing where it starts repeating
 // create a const variable that references what I want to select out of the html
 // set the const variable to hold the value of document.querySelectorAll('');
 // remember that querySelectorAll gives me back a node list, and thats super useful because I can use the .forEach() method on it to iterate thru (sift thru/pick out/identify/find/separate/go thru) all the items in the node list
@@ -49,21 +55,19 @@
 
 // ---------------------------------------------------
 // creating a class and chaining methods way
-class Menu {
-  constructor(menu) {
-    // console.log(menu);
-    this.headerEl = menu.querySelector('header');
-    this.menuButtonEl = menu.querySelector('.menu-button');
-    this.unorderedListEl = menu.querySelector('ul');
-    this.listItemsEl = menu.querySelectorAll('li');
-    // console.log(this);
-  }
-  toggleMenuButton
-}
+// class Menu {
+//   constructor(menu) {
+//     // console.log(menu);
+//     this.headerEl = menu.querySelector('header');
+//     this.menuButtonEl = menu.querySelector('.menu-button');
+//     this.unorderedListEl = menu.querySelector('ul');
+//     this.listItemsEl = menu.querySelectorAll('li');
+//     console.log(headerEl);
+//   }
+//   toggleMenuButton
+// }
 // ----------------------------------
-const toggleMenuItems = document
-  .querySelectorAll('.menu ul')
-  .forEach(menu => new Menu(menu));
+// const toggleMenuItems = document.querySelectorAll('.menu ul').forEach(menu => new Menu(menu));
 // ------------------------------------------------
 
 // const toggleMenu = () => {
